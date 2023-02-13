@@ -2,7 +2,7 @@ use std::env;
 use std::fs;
 use std::path::Path;
 use std::io;
-use std::process
+use std::process;
 
 struct Lox {
     had_error: bool,
