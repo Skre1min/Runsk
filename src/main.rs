@@ -4,13 +4,13 @@ use std::path::Path;
 use std::io;
 use std::process;
 
-struct Lox {
+struct Runsk {
     had_error: bool,
 }
 
-impl Lox {
+impl Runsk {
     fn new() -> Self {
-        Lox { had_error: false }
+        Runsk { had_error: false }
     }
 
     fn run(&mut self) {
@@ -34,7 +34,7 @@ impl Lox {
         println!("{}", contents);
 
         if (self.had_error){
-             process::exit(0);
+             process::exit(65);
         }
     }
 
@@ -66,6 +66,6 @@ impl Lox {
 }
 
 fn main() {
-    let mut lox = Lox::new();
+    let mut lox = Runsk::new();
     lox.run();
 }
